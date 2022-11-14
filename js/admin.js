@@ -1,18 +1,42 @@
+const Shows = [
+    {
+        name: 'DUKI',
+        dataPlace: '10/12/2022 - ESTADIO VELEZ SARFIELD',
+        price: 10000,
+        image: 'https://i.ibb.co/ZNbgC23/Duki-recital.jpg',
+        stock: true
+    },
+    {
+        name: 'DADDY YANKEE',
+        dataPlace: '17/12/2022 - MOVISTAR ARENA',
+        price: 22000,
+        image: 'https://i.ibb.co/wNwddGy/Daddy-Yankee-Recital.jpg',
+        stock: true
+    },
+    {
+        name: 'HARRY STYLES',
+        dataPlace: '29/12/2022 - MOVISTAR ARENA',
+        price: 28000,
+        image: 'https://i.ibb.co/xzRx7FM/Harry-Styles-Recital.jpg',
+        stock: false
+    }
+];
 
-import { Shows } from './show-list.js';
+
 
 const tableBodyHTML = document.getElementById('table-body');
 const addShowForm = document.getElementById('addShowForm')
 const cardsShow = document.getElementById('cardsShow')
 
 let editable;
+console.log(JSON.parse(localStorage.getItem('shows-key')))
+let savedShows = JSON.parse(localStorage.getItem('shows-key')) || Shows
 
-let savedShows = JSON.parse(localStorage.getItem('shows-key'))
-
-// if(savedShows === null)
-if (!savedShows) {
-    savedShows = Shows
-}
+// // if(savedShows === null)
+// if (!savedShows) {
+    //     savedShows = Shows
+    // }
+    console.log(savedShows)
 
 function renderShows() {
     console.log("loco")
@@ -58,7 +82,7 @@ addShowForm.addEventListener('submit', (evt) => {
         stock: formEl.stock.checked
     }
 
-    if(editable) {
+    if(editable >= 0) {
         savedShows[editable] = newShow;
     } else {
         savedShows.push(newShow)
@@ -75,7 +99,7 @@ addShowForm.addEventListener('submit', (evt) => {
 
 function deleteShow(idx) {
     savedShows.splice(idx,1);
-    localStorage.setItem('shows-key', JSON.stringify(Shows))
+    localStorage.setItem('shows-key', JSON.stringify(savedShows))
     renderShows();
 }
 
