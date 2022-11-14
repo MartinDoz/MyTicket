@@ -74,12 +74,14 @@ addShowForm.addEventListener('submit', (evt) => {
     console.dir(evt.target.elements);
     const formEl = evt.target.elements;
     console.log(formEl);
+    console.dir(document.getElementById('date').value)
     let newShow = {
         name: formEl.name.value,
         dataPlace: formEl.dataPlace.value,
         price: formEl.price.valueAsNumber,
         image: formEl.image.value,
-        stock: formEl.stock.checked
+        stock: formEl.stock.checked,
+        eventDate: formEl.eventDate.value
     }
 
     if(editable >= 0) {
@@ -112,11 +114,20 @@ function editShow(idx) {
     formEl.dataPlace.value = showToEdit.dataPlace;
     formEl.price.valueAsNumber = showToEdit.price;
     formEl.image.value = showToEdit.image;
-
+    formEl.eventDate.value = showToEdit.eventDate;
     formEl.stock.checked = showToEdit.stock;
 
     editable = idx
     
 }
 
+function setMinDate() {
+    const dateHTML = document.getElementById('date');
+    const currentDate = new Date();
+    const day = currentDate.getDate() + 1;
+    const month = currentDate.getMonth() + 1;
+    const year = currentDate.getFullYear();
+    dateHTML.setAttribute('min', `${year}-${month}-${day}`)
+}
 
+setMinDate();
