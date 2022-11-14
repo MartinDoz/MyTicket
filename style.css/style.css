@@ -114,3 +114,10 @@ footer {
   right: 40px;
 }
 
+
+.table-img {
+  width: 70px;
+  object-fit: cover;
+  height: 80px;
+}
+
