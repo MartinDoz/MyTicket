@@ -58,7 +58,7 @@ addShowForm.addEventListener('submit', (evt) => {
         stock: formEl.stock.checked
     }
 
-    if(editable) {
+    if(editable >= 0) {
         savedShows[editable] = newShow;
     } else {
         savedShows.push(newShow)
