@@ -2,22 +2,22 @@ export const mensajes =[
     {
         name: 'jorge',
         email: 'jorge@gmail.com',
-        mensaje: 'mensadaasdfadfasdf sdfvasdf'
+        mensaje: 'Gracias por existir'
     },
 
     {
         name: 'marina',
         email: 'marina@gmail.com',
-        mensaje: 'mensabbbba asdasd   yrty daasdfadfasdf sdfvasdf'
+        mensaje: 'Compre las entradas vip que queria...'
     },
     {
         name: 'carlos',
         email: 'carlos@gmail.com',
-        mensaje: 'me bbb nsadaasdfadfasdf sdfvasdf'
+        mensaje: 'Podremos con amigos, conocer un gran espectaculo de U2'
     },
     {
         name: 'lisa',
         email: 'lisa@gmail.com',
-        mensaje: 'menasda asda dfadfasdf sdfvasdf'
+        mensaje: 'Muy buena la pagina, muy atentos a los detalles'
     }
 ];
