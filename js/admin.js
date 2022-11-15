@@ -1,21 +1,21 @@
 const Shows = [
     {
         name: 'DUKI',
-        dataPlace: '10/12/2022 - ESTADIO VELEZ SARFIELD',
+        place: '10/12/2022 - ESTADIO VELEZ SARFIELD',
         price: 10000,
         image: 'https://i.ibb.co/ZNbgC23/Duki-recital.jpg',
         stock: true
     },
     {
         name: 'DADDY YANKEE',
-        dataPlace: '17/12/2022 - MOVISTAR ARENA',
+        place: '17/12/2022 - MOVISTAR ARENA',
         price: 22000,
         image: 'https://i.ibb.co/wNwddGy/Daddy-Yankee-Recital.jpg',
         stock: true
     },
     {
         name: 'HARRY STYLES',
-        dataPlace: '29/12/2022 - MOVISTAR ARENA',
+        place: '29/12/2022 - MOVISTAR ARENA',
         price: 28000,
         image: 'https://i.ibb.co/xzRx7FM/Harry-Styles-Recital.jpg',
         stock: false
@@ -32,14 +32,7 @@ let editable;
 console.log(JSON.parse(localStorage.getItem('shows-key')))
 let savedShows = JSON.parse(localStorage.getItem('shows-key')) || Shows
 
-// // if(savedShows === null)
-// if (!savedShows) {
-    //     savedShows = Shows
-    // }
-    console.log(savedShows)
-
 function renderShows() {
-    console.log("loco")
     tableBodyHTML.innerHTML = '';
     savedShows.forEach((elem, index) => {
         tableBodyHTML.innerHTML += `<tr>
@@ -47,7 +40,7 @@ function renderShows() {
                                             <img class="table-img" src=${elem.image} />
                                             </td>
                                             <td>${elem.name}</td>
-                                            <td>${elem.dataPlace}</td>
+                                            <td>${elem.place}</td>
                                             <td>$ ${elem.price}</td>
                                             <td class="">${elem.stock ? `<i class="fa-solid fa-check"></i>` : `<i class="fa-solid fa-xmark"></i>`}  </td>
                                             <td>
@@ -77,7 +70,7 @@ addShowForm.addEventListener('submit', (evt) => {
     console.dir(document.getElementById('date').value)
     let newShow = {
         name: formEl.name.value,
-        dataPlace: formEl.dataPlace.value,
+        place: formEl.place.value,
         price: formEl.price.valueAsNumber,
         image: formEl.image.value,
         stock: formEl.stock.checked,
@@ -111,7 +104,7 @@ function editShow(idx) {
     const formEl = addShowForm.elements
 
     formEl.name.value = showToEdit.name;
-    formEl.dataPlace.value = showToEdit.dataPlace;
+    formEl.place.value = showToEdit.place;
     formEl.price.valueAsNumber = showToEdit.price;
     formEl.image.value = showToEdit.image;
     formEl.eventDate.value = showToEdit.eventDate;
