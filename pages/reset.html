@@ -126,34 +126,41 @@
         </div>
     </header>
     <main>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
+        <div class="container-fluid reset-container ">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Para reajustar su contraseña, envíe su dirección de correo electrónico.</h1>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 offset-3">
+                          <form id="login-form" class="p-4">
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input
+                                value="johndoe@gmail.com"
+                                type="email"
+                                class="form-control"
+                                name="email"
+                                id="email"
+                                placeholder="name@example.com"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                minlength="8" maxlength="40" required
+                              />
+                            </div>
+                            
+                            <div class="mb-3">
+                              <button type="submit" class="btn btn-secondary" id="submit-button">Recuperar</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <footer class="bg-gradient-2 mt-4">
+        <footer class="bg-gradient-2 mt-5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 p-3 d-flex justify-content-center ">
