@@ -1,21 +1,21 @@
 const Shows = [
     {
         name: 'DUKI',
-        place: '10/12/2022 - ESTADIO VELEZ SARFIELD',
+        place: 'ESTADIO VELEZ SARFIELD',
         price: 10000,
         image: 'https://i.ibb.co/ZNbgC23/Duki-recital.jpg',
         stock: true
     },
     {
         name: 'DADDY YANKEE',
-        place: '17/12/2022 - MOVISTAR ARENA',
+        place: 'MOVISTAR ARENA',
         price: 22000,
         image: 'https://i.ibb.co/wNwddGy/Daddy-Yankee-Recital.jpg',
         stock: true
     },
     {
         name: 'HARRY STYLES',
-        place: '29/12/2022 - MOVISTAR ARENA',
+        place: 'MOVISTAR ARENA',
         price: 28000,
         image: 'https://i.ibb.co/xzRx7FM/Harry-Styles-Recital.jpg',
         stock: false
@@ -28,7 +28,7 @@ const cardsShow = document.getElementById('cardsShow')
 let savedShows = JSON.parse(localStorage.getItem('shows-key'))
 
 
-if(!savedShows) {
+if (!savedShows) {
     savedShows = Shows
 }
 

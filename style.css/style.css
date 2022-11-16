@@ -44,6 +44,10 @@ footer {
   transition: 0.5s;
 }
 
+.reset-container {
+ margin-top: 17rem;
+}
+
 
 .contenedor{
   position: relative;
@@ -153,3 +157,6 @@ footer {
   height: 80px;
 }
 
+.img-cards {
+  width: 100%;
+}
