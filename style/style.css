@@ -3,6 +3,10 @@ body {
   margin-top: 60px;
   }
 
+main {
+  height: 100%;
+}
+
 .bg-gradient-2 {
   background: rgb(0,1,27);
   background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
@@ -29,6 +33,9 @@ body {
 footer {
   color: white;
   padding-top: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .redes a {
@@ -69,6 +76,10 @@ footer {
     object-fit: cover;
 }
 
+.profile-card-2 .profile-icons, .profile-card-2 .profile-username, .profile-card-2 .profile-icons .fa {
+  display: none;
+
+}
 
 }
 
@@ -137,6 +148,10 @@ footer {
 .profile-card-2:hover img {
   filter: grayscale(100%);
 }
+.profile-card-2:hover div {
+  -webkit-text-stroke: 0.3px #000000 ;
+
+}
 
 .profile-card-2:hover .profile-name {
   bottom: 80px;
@@ -160,3 +175,73 @@ footer {
 .img-cards {
   width: 100%;
 }
+
+.login {
+  width: 50%;
+  margin: 2rem;
+  padding-top: 5rem;
+  color: white;
+  
+  }
+  
+  .login form {
+  margin: auto;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(0,1,27);
+  background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+  }
+  
+  .login form span {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #434a52;
+  color: white;
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  }
+  
+  .login form input[type="email"] {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-radius: 0px 3px 3px 0px;
+  color: white;
+  margin-bottom: 1em;
+  padding: 0 16px;
+    width: 100%;
+  height: 50px;
+  }
+  
+  .login form input[type="password"] {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-radius: 0px 3px 3px 0px;
+  color: white;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 100%;
+  height: 50px;
+  }
+  
+  .login form input[type="submit"] {
+  background-color: rgb(102, 100, 145);
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  }
+  .login form input[type="submit"]:hover {
+  background: #485fd2;
+  }
+

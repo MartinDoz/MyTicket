@@ -9,7 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/style.css/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark main-container fixed-top bg-gradient-2">
             <a class="navbar-brand" href="/index.html">
                 <img src="/assets/logo ticket invertido colores.png" width="100" class="pb-3" alt="logo">
-                <span class="shaker">Ticketek</span>
+                <span">MyTicket</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -44,10 +44,11 @@
                         <a class="nav-link active" aria-current="page" href="/pages/jorge/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item nav-lista-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/suscribirse.html">Suscribirse</a>
+                        <a class="nav-link active" aria-current="page" href="/pages/registro.html">Registrarse</a>
                     </li>
                     <li class="nav-item nav-lista-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/sesion.html">Iniciar Sesion</a>
+                        <a class="nav-link active" aria-current="page" href="/pages/iniciar-sesion.html">Iniciar
+                            Sesion</a>
                     </li>
                 </ul>
             </div>
@@ -58,83 +59,18 @@
 
 
 
-
-
-    <div class="modal fade" id="modal-suscribirse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Suscribirse</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputuser1" class="form-label">Usuario</label>
-                            <input type="user" class="form-control" id="exampleInputuser1" required minlength="7"
-                                maxlength="30">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Ingresa tu Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="juanperez@gmail.com" required minlength="10"
-                                maxlength="40">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" required
-                                minlength="7" maxlength="30">
-                            <div id="emailHelp" class="form-text">Ingresar al menos 7 caracteres </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Suscribirse</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal-ingresar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Usuario</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" required minlength="7" maxlength="30">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" required
-                                minlength="7" maxlength="7">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Ingresar</button>
-                </div>
-            </div>
-        </div>
-    </div>
     </header>
     <main>
         <div class="container-fluid">
             <div class="row m-0 mb-2 text-center">
-                <div class="col-12"> 
+                <div class="col-12">
                     <div>
                         <img src="/assets/error-404.png" class="col-12 img-error" alt="Error 404">
                     </div>
                     <button type="button" class="btn btn-danger _blank">Volver atras</button>
                 </div>
             </div>
-    </div>
+        </div>
 
 
 
@@ -146,7 +82,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 p-3 d-flex justify-content-center ">
-                        <span class="shaker">Ticketek</span>
+                        <span">MyTicket</span>
                     </div>
                     <div class="col-sm-12 col-md-4 p-3 ">
                         <p class="text-center">San Lorenzo 855 - San Miguel de Tucumán(4000)</p>
@@ -168,7 +104,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/dfcb043713.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dfcb043713.js" crossorigin="anonymous"></script>
     <script src="/js/cards-show.js" type="module"></script>
     <!-- <script src="/js/admin.js" type="module"></script>
     <script src="/js/show-list.js" type="module"></script> -->

@@ -9,7 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/style.css/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark main-container fixed-top bg-gradient-2">
             <a class="navbar-brand" href="/index.html">
                 <img src="/assets/logo ticket invertido colores.png" width="100" class="pb-3" alt="logo">
-                <span class="shaker">Ticketek</span>
+                <span">MyTicket</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-lista">
                     <li class="nav-item nav-lista-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="/pages/index-admin.html">Inicio</a>
                     </li>
                     <li class="nav-item nav-lista-item">
                         <a class="nav-link active" aria-current="page" href="/pages/jorge/contacto.html">Contacto</a>
@@ -44,10 +44,10 @@
                         <a class="nav-link active" aria-current="page" href="/pages/jorge/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item nav-lista-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/suscribirse.html">Suscribirse</a>
+                        <a class="nav-link active" aria-current="page" href="/admin.html">Agregar productos</a>
                     </li>
                     <li class="nav-item nav-lista-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/sesion.html">Iniciar Sesion</a>
+                        <a class="nav-link active" aria-current="page" href="/index.html">SALIR</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
     <div class="container-fluid">
         <h1>Productos Admin</h1>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <h2>Carga de Recitales</h2>
                 <form novalidate class="row mb-3 needs-validation" id="addShowForm" onclick="">
                     <div class="col-12 col-md-6 mb-3">
@@ -73,9 +73,9 @@
                     </div>
                     
                     <div class="col-12 col-md-6 mb-3">
-                        <label for="place" class="form-label">Fecha y lugar del Show</label>
+                        <label for="place" class="form-label">Lugar del Show</label>
                         <input name="place" type="text" class="form-control" id="place"
-                            placeholder="22-10-2022 - Movistar Arena" required minlength="3" maxlength="40">
+                            placeholder="Movistar Arena" required minlength="3" maxlength="40">
                         <div class="valid-feedback">
                             Parece correcto!
                         </div>
@@ -86,7 +86,7 @@
                     <div class="col-12 col-md-6 mb-3">
                         <label for="date" class="form-label">Fecha</label>
                         <div class="input-group">
-                            <span class="input-group-text">$</span>
+                            <span class="input-group-text">🗓️</span>
                             <input name="eventDate" type="date" class="form-control" id="date" required >
                         </div>
                         <div class="valid-feedback">
@@ -134,20 +134,21 @@
 
 
 
-                    <div class="col-12">
+                    <div class="col-12 col-lg-6">
                         <button type="submit" class="btn btn-primary">Agregar artista</button>
                     </div>
                 </form>
             </div>
 
-
-            <div class="col-12 col-md-6">
+            
+            <div class="col-12 col-lg-6">
                 <table class="table table-dark table-striped">
                     <thead>
                         <tr>
                             <th scope="col">Imagen</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Fecha y Lugar</th>
+                            <th scope="col">Lugar</th>
+                            <th scope="col">Fecha</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Stock</th>
                             <th scope="col">Acciones</th>
@@ -170,19 +171,7 @@
     </div>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
 
 
 
@@ -192,7 +181,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 p-3 d-flex justify-content-center ">
-                        <span class="shaker">Ticketek</span>
+                        <span">MyTicket</span>
                     </div>
                     <div class="col-sm-12 col-md-4 p-3 ">
                         <p class="text-center">San Lorenzo 855 - San Miguel de Tucumán(4000)</p>

@@ -7,7 +7,6 @@ html,
 body {
     
     padding: 0;
-    background-color: #a4abb9;
     font-family: 'Rubik', sans-serif;
 
     height: 1100px;
@@ -94,11 +93,12 @@ body {
 
 .card-1:hover {
     transform: scale(1.11);
-    box-shadow: -7px 4px 28px -3px #868486;
+    box-shadow: -7px 4px 28px -3px #000000;
 }
 
 .card-1::before {
-    background: linear-gradient(90deg, #868486 0%, #151519 100%);
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
 }
 
 .card-2 {
@@ -109,11 +109,12 @@ body {
 
 .card-2:hover {
     transform: scale(1.11);
-    box-shadow: -7px 4px 28px -3px #3bd9d9;
+    box-shadow: -7px 4px 28px -3px #000000;
 }
 
 .card-2::before {
-    background: linear-gradient(90deg, #3bd9d9 0%, #151519 100%);
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
 }
 
 .card-3 {
@@ -124,11 +125,12 @@ body {
 
 .card-3:hover {
     transform: scale(1.11);
-    box-shadow: -7px 4px 28px -3px #3b97e8;
+    box-shadow: -7px 4px 28px -3px #000000;
 }
 
 .card-3::before {
-    background: linear-gradient(90deg, #3b97e8 0%, #151519 100%);
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
 }
 
 .card-4 {
@@ -139,12 +141,13 @@ body {
 
 .card-4:hover {
     transform: scale(1.11);
-    box-shadow: -7px 4px 28px -3px #fd5017;
+    box-shadow: -7px 4px 28px -3px #000000;
 
 }
 
 .card-4::before {
-    background: linear-gradient(90deg, #fd5017 0%, #151519 100%);
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
 }
 
 

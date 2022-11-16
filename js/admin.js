@@ -1,21 +1,24 @@
 const Shows = [
     {
         name: 'DUKI',
-        place: '10/12/2022 - ESTADIO VELEZ SARFIELD',
+        place: 'ESTADIO VELEZ SARFIELD',
+        eventDate: `2022-12-29`,
         price: 10000,
         image: 'https://i.ibb.co/ZNbgC23/Duki-recital.jpg',
         stock: true
     },
     {
         name: 'DADDY YANKEE',
-        place: '17/12/2022 - MOVISTAR ARENA',
+        place: 'MOVISTAR ARENA',
+        eventDate: `2023-01-11`,
         price: 22000,
         image: 'https://i.ibb.co/wNwddGy/Daddy-Yankee-Recital.jpg',
         stock: true
     },
     {
         name: 'HARRY STYLES',
-        place: '29/12/2022 - MOVISTAR ARENA',
+        place: 'MOVISTAR ARENA',
+        eventDate: `2023-01-24`,
         price: 28000,
         image: 'https://i.ibb.co/xzRx7FM/Harry-Styles-Recital.jpg',
         stock: false
@@ -35,12 +38,14 @@ let savedShows = JSON.parse(localStorage.getItem('shows-key')) || Shows
 function renderShows() {
     tableBodyHTML.innerHTML = '';
     savedShows.forEach((elem, index) => {
+        console.log(elem)
         tableBodyHTML.innerHTML += `<tr>
                                         <td>
                                             <img class="table-img" src=${elem.image} />
                                             </td>
                                             <td>${elem.name}</td>
                                             <td>${elem.place}</td>
+                                            <td>${elem.eventDate}</td>
                                             <td>$ ${elem.price}</td>
                                             <td class="">${elem.stock ? `<i class="fa-solid fa-check"></i>` : `<i class="fa-solid fa-xmark"></i>`}  </td>
                                             <td>
@@ -77,30 +82,30 @@ addShowForm.addEventListener('submit', (evt) => {
         eventDate: formEl.eventDate.value
     }
 
-    if(editable >= 0) {
+    if (editable >= 0) {
         savedShows[editable] = newShow;
     } else {
         savedShows.push(newShow)
     }
 
-    editable = undefined; 
+    editable = undefined;
 
     localStorage.setItem('shows-key', JSON.stringify(savedShows))
 
     renderShows()
- 
+
     addShowForm.reset()
 })
 
 function deleteShow(idx) {
-    savedShows.splice(idx,1);
+    savedShows.splice(idx, 1);
     localStorage.setItem('shows-key', JSON.stringify(savedShows))
     renderShows();
 }
 
 function editShow(idx) {
     const showToEdit = savedShows[idx]
-    
+
     const formEl = addShowForm.elements
 
     formEl.name.value = showToEdit.name;
@@ -111,7 +116,7 @@ function editShow(idx) {
     formEl.stock.checked = showToEdit.stock;
 
     editable = idx
-    
+
 }
 
 function setMinDate() {
