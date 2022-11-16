@@ -1,0 +1,247 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  margin-top: 60px;
+  }
+
+main {
+  height: 100%;
+}
+
+.bg-gradient-2 {
+  background: rgb(0,1,27);
+  background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+}
+
+.nav-lista .nav-lista-item:hover{
+  transition: 0.3s;
+  opacity: 0.4;
+  }
+
+.boton-suscribirse {
+  color: white;
+}
+.boton-suscribirse:hover {
+  color: white;
+}
+
+.boton-suscribirse:focus {
+  color: white;
+}
+
+
+
+footer {
+  color: white;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.redes a {
+  text-decoration: none;
+  color: white;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 35px;
+}
+
+.redes a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.reset-container {
+ margin-top: 17rem;
+}
+
+
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.texto-carousel {
+  position: absolute;
+  bottom: 35%;
+}
+
+
+@media screen and (max-width: 720px) {
+  .img-fluid {
+    max-width: 100%;
+    height: 378px;
+    object-fit: cover;
+}
+
+.profile-card-2 .profile-icons, .profile-card-2 .profile-username, .profile-card-2 .profile-icons .fa {
+  display: none;
+
+}
+
+}
+
+
+
+
+  
+
+  
+
+
+
+
+.profile-card-2 {
+  width: 300px;
+  height: 400px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.profile-card-2 img {
+  transition: all linear 0.25s;
+  object-fit: cover;
+  height: 100%;
+  
+}
+
+.profile-card-2 .profile-name {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: #FFF;
+  transition: all linear 0.25s; 
+}
+
+.profile-card-2 .profile-username {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: #FFF;
+  font-size: 13px;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+  margin: 5px;
+}
+
+.profile-card-2:hover img {
+  filter: grayscale(100%);
+}
+.profile-card-2:hover div {
+  -webkit-text-stroke: 0.3px #000000 ;
+
+}
+
+.profile-card-2:hover .profile-name {
+  bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+  bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+  right: 40px;
+}
+
+
+.table-img {
+  width: 70px;
+  object-fit: cover;
+  height: 80px;
+}
+
+.img-cards {
+  width: 100%;
+}
+
+.login {
+  width: 50%;
+  margin: 2rem;
+  padding-top: 5rem;
+  color: white;
+  
+  }
+  
+  .login form {
+  margin: auto;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(0,1,27);
+  background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+  }
+  
+  .login form span {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #434a52;
+  color: white;
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  }
+  
+  .login form input[type="email"] {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-radius: 0px 3px 3px 0px;
+  color: white;
+  margin-bottom: 1em;
+  padding: 0 16px;
+    width: 100%;
+  height: 50px;
+  }
+  
+  .login form input[type="password"] {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  border-radius: 0px 3px 3px 0px;
+  color: white;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 100%;
+  height: 50px;
+  }
+  
+  .login form input[type="submit"] {
+  background-color: rgb(102, 100, 145);
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  }
+  .login form input[type="submit"]:hover {
+  background: #485fd2;
+  }
+

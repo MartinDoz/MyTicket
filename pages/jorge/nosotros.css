@@ -1,0 +1,193 @@
+* {
+   
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+
+    height: 1100px;
+    margin-top: 60px;
+}
+
+.container-mision {
+    display:flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 1500px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.container-mision .item {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+
+.valores {
+    margin: 10;
+    padding: 24px;
+}
+
+.oontainer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 90rem;
+    perspective-origin: 30% 60%;
+
+}
+
+.div-transform {
+    display: flex;
+    transform:   scale3d(1,1,-0.9) scale(1.1) translateX(100px) translateY(50px);
+}
+
+.card {
+    background: url('') center;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0px 18px;
+    width: 244px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    transform: translate(0);
+
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity:0.85;
+}
+
+.card h2  {
+    text-transform: capitalize;
+}
+
+.card a {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 48px;
+}
+
+.card-1 {
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}    
+
+.card-1:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #000000;
+}
+
+.card-1::before {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+}
+
+.card-2 {
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+
+.card-2:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #000000;
+}
+
+.card-2::before {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+}
+
+.card-3 {
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+
+.card-3:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #000000;
+}
+
+.card-3::before {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+}
+
+.card-4 {
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+
+.card-4:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #000000;
+
+}
+
+.card-4::before {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+}
+
+
+
+/* styles index */
+.bg-gradient-2 {
+    background: rgb(0,1,27);
+    background: linear-gradient(90deg, rgba(0,1,27,1) 0%, rgba(13,14,52,1) 38%, rgba(10,11,55,1) 73%, rgba(6,2,41,1) 100%);
+  }
+  
+  .nav-lista .nav-lista-item:hover{
+    transition: 0.3s;
+    opacity: 0.4;
+    }
+  
+  .boton-suscribirse {
+    color: white;
+  }
+  .boton-suscribirse:hover {
+    color: white;
+  }
+  
+  .boton-suscribirse:focus {
+    color: white;
+  }
+
+  footer {
+    color: white;
+    padding-top: 1rem;
+  }
+  
+  .redes a {
+    text-decoration: none;
+    color: white;
+    margin-left: 9px;
+    margin-right: 9px;
+    font-size: 35px;
+  }
+  
+  .redes a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }

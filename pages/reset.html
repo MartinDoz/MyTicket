@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketek</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Nanum+Gothic:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Nanum+Gothic:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,900;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark main-container fixed-top bg-gradient-2">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logo ticket invertido colores.png" width="100" class="pb-3" alt="logo">
+                <span">MyTicket</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-lista">
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+						<a class="nav-link active" aria-current="page" href="/pages/registro.html">Registrarse</a>
+					</li>
+					<li class="nav-item nav-lista-item">
+						<a class="nav-link active" aria-current="page" href="/pages/iniciar-sesion.html">Iniciar Sesion</a>
+					</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="modal-suscribirse" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Suscribirse</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputuser1" class="form-label">Usuario</label>
+                                <input type="user" class="form-control" id="exampleInputuser1" required minlength="7"
+                                    maxlength="30">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ingresa tu Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="juanperez@gmail.com" required
+                                    minlength="10" maxlength="40">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required
+                                    minlength="7" maxlength="30">
+                                <div id="emailHelp" class="form-text">Ingresar al menos 7 caracteres </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-ingresar" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required minlength="7" maxlength="30">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required
+                                    minlength="7" maxlength="7">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid reset-container ">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Para reajustar su contraseña, envíe su dirección de correo electrónico.</h1>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 offset-3">
+                          <form id="login-form" class="p-4">
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input
+                                value="johndoe@gmail.com"
+                                type="email"
+                                class="form-control"
+                                name="email"
+                                id="email"
+                                placeholder="name@example.com"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                minlength="8" maxlength="40" required
+                              />
+                            </div>
+                            
+                            <div class="mb-3">
+                              <button type="submit" class="btn btn-secondary" id="submit-button">Recuperar</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer class="bg-gradient-2 mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 p-3 d-flex justify-content-center ">
+                        <span">MyTicket</span>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3 ">
+                        <p class="text-center">San Lorenzo 855 - San Miguel de Tucumán(4000)</p>
+                        <p class="text-center"></i>0381-4211111 / 0381-4300000</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center redes ">
+                        <p class="fw-bold">Seguinos por:</p>
+                        <a target="_blank" href="https://twitter.com/home"><i class="fa fa-twitter-square"
+                                aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/823835b326.js"></script>
+</body>
+
+</html>

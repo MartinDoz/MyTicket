@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Nanum+Gothic:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Nanum+Gothic:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,900;1,300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="contacto.css" />
+
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark main-container fixed-top bg-gradient-2">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/logo ticket invertido colores.png" width="100" class="pb-3" alt="logo">
+                <span">MyTicket</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-lista">
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/jorge/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/jorge/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/registro.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item nav-lista-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/iniciar-sesion.html">Iniciar Sesion</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    
+      </header>
+
+    
+    <!-- formulario -->
+    <main class="container-fluid">
+        <div class="container text-center">
+
+            <div class="row">
+                <div class="col-6 ">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <p ><h1>Contactanos</h1> </p>
+                            <form novalidate class= "row mb-3 needs-validation" id="addmensajes">
+                                                      
+                                <!-- Nombre -->
+                                <label for="name" class="form-label">Nombre</label>
+                                <input name="name" type="text" class="form-control" id="name" required minlength="3" maxlength="20">
+                            
+                                <div class="valid-feedback">
+                                    Bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Este campo es requerido!
+                                </div>
+
+                                <!-- Email -->
+                                <label for="email" class="form-label">Email</label>
+                                <input name="email" type="email" class="form-control" id="email" required minlength="5" maxlength="30">
+                                
+                                <div class="valid-feedback">
+                                    Bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Este campo es requerido!
+                                </div>
+
+                                <!-- Mensaje -->
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" required required minlength="5" maxlength="200"></textarea>
+                            
+                                <div class="valid-feedback">
+                                    Bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Este campo es requerido!
+                                </div>
+
+                            
+                                <!-- boton -->
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label"></label>
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div>    
+                      
+                            </form>
+                        </div>
+                    </div>        
+                </div>
+
+                <!-- carrousel -->
+                <div class="col">
+                    <p ><h1>Conciertos</h1> </p>
+                    <label for="mensaje" class="form-label"></label>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/1000.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1001.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1002.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1003.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1004.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1005.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1006.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1007.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1008.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1009.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/1010.jpg" class="d-block w-100 " alt="...">
+                        </div>
+                        
+                    </div>
+                </div>
+              
+            </div>
+            
+        </div>
+
+        <!--tabla-->  
+            <h1>Mensajes</h1>
+            <div class="container-lg">
+                <table class="table table dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mensaje</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="table-body">
+                        
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+    </main>
+    
+
+        <footer class="bg-gradient-2 mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 p-3 d-flex justify-content-center ">
+                        <span">MyTicket</span>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3 ">
+                        <p class="text-center">San Lorenzo 855 - San Miguel de Tucumán(4000)</p>
+                        <p class="text-center"></i>0381-4211111 / 0381-4300000</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center redes ">
+                        <p class="fw-bold">Seguinos por:</p>
+                        <a target="_blank" href="https://twitter.com/home"><i class="fa fa-twitter-square"
+                                aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="mensajes-list.js" type="module"></script>
+    <script src="contacto.js" type="module"></script>
+    
+    <script>
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            });
+        }, false);
+        })();
+
+    </script>
+
+    <script src="https://use.fontawesome.com/823835b326.js"></script>
+
+</body>
+</html>
