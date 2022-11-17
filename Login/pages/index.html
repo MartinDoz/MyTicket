@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/style/style.css">
+<html lang="en">
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script src="/js/app.js"></script>
+		<div class="login">
+			<form name='form-login'>
+		
+				<h1>REGISTRARSE</h1>
+		
+				<label for="name">Email</label>
+				<input type="email" id="name" placeholder="Username" required>
+		
+				<label for="pw">Contraseña</label>
+				<input type="password"
+					   id= "pw"
+					   placeholder="Password" required>
+		
+				<ul class="helper-text">
+					<li class="length">Debe contener al menos 8 caracteres.</li>
+					<li class="lowercase">Debe contener una minuscula.</li>
+					<li class="uppercase">Debe contener una mayuscula.</li>
+					<li class="special">Debe contener un número o caracter especial.</li>
+				</ul>
+				<input id="rgstr_btn" type="submit" value="Registrarme" onclick="store()">
+		
+			</form>
+		</div>
+		
+		<div class="login">
+			<form name='form-login'>
+		
+				<h1>INGRESAR</h1>
+		
+				<label for="userName">Email</label>
+				<input type="email" id="userName" placeholder="Username" required>
+		
+				<label for="userPw">Contraseña</label>
+				<input type="password" id= "userPw" placeholder="Password" required>
+		
+				<div id="remember">
+					<input type="checkbox" value="lsRememberMe" id="rememberMe"
+						   style="display: inline-block;">
+					<label>Recuerdame</label>
+				</div>
+		
+				<input id= "login_btn" type="submit" value="Login" onclick="check()">
+		
+			</form>
+		</div>
+		
+	</body>
+</html>
